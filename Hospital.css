@@ -445,7 +445,7 @@ response-content p{
 }
 
 footer{
-    width: 100%;
+    width: 99%;
     position: relative;
     bottom: 0;
     background: linear-gradient(to right, green, #01ca8b);
