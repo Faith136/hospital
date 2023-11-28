@@ -248,6 +248,7 @@ display: inline-block;
 .work{
     position: relative;
     margin-top: 5px;
+    width: 100%;
 }
 .hours{
     background: #01ca8b;
@@ -360,7 +361,7 @@ response-content p{
     margin-left: 6px;
 }
 .container2{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0;
     padding: 30px 10px;
 }
@@ -445,14 +446,17 @@ response-content p{
 }
 
 footer{
-    width: 99%;
+    width: 100%;
+    margin: 0;
+    padding: 30px 15px;
     position: relative;
     bottom: 0;
     background: linear-gradient(to right, green, #01ca8b);
     color: #fff;
-    
+  border-top-left-radius: 125px;
+    line-height: 18px;
 }
-.row{
+.row3{
     width: 85%;
     margin: auto;
     display: flex;
@@ -464,13 +468,12 @@ footer{
     flex-basis: 25%;
     padding: 10px;
 }
-.col:nth-child(2), .col:nth-child(3){
-    flex-basis: 15%;
-}
+
 .logof{
     width: 80px;
     margin-bottom: 30px;
 }
+
 
 .col h3{
     width: fit-container;
@@ -482,11 +485,11 @@ footer{
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
 }
-ul li{
+.col ul li{
     list-style: none;
     margin-bottom: 12px;
 }
-ul li a{
+.col ul li a{
     text-decoration: none;
     color: #fff;
     }
@@ -510,7 +513,7 @@ border: 0;
 outline: none;
 }
 form button{
-    background: transparent;
+    background: #fff;
     border: 0;
     outline: none;
     cursor: pointer;
@@ -526,7 +529,7 @@ border-radius: 50%;
 text-align: center;
 line-height: 40px;
 font-size: 20px;
-background: #fff;
+
 margin-right: 15px;
 cursor: pointer;
 }
