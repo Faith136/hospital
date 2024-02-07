@@ -365,7 +365,7 @@ response-content p{
     margin: 0;
     padding: 30px 10px;
 }
-.container2 .title{
+ .title{
     font-size: 30px;
     color: #000;
     margin-bottom: 10px;
@@ -382,13 +382,13 @@ response-content p{
     padding: 1rem .5rem;
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    outline: .1rem solid #ccc;
+    outline: .1rem solid green;
     outline-offset: -1.0rem;
     cursor: pointer;
 }
 .product:hover{
     outline: .2rem solid #222;
-    outline-offset: 0;
+    outline-offset: ;
 }
 .product img{
     height: 20rem;
@@ -541,4 +541,130 @@ hr{
 }
 .copyright{
     text-align: center;
+}
+
+.others .box-container{
+   display: flex;  
+   gap: .3rem;
+   width: 100%;
+   position: relative;
+
+}
+
+.box-container .boxes{
+    position: relative;
+    width:450px;
+    height: 410px;
+    border: 2px solid green;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-top: 30px;
+   
+}
+
+
+.box-container .boxe{   
+    padding: 2rem;
+    left: -50px;
+    text-align: center;    
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: 50%; 
+        height: 100px;
+    width: 100px;
+    transform: rotate(calc(360deg/6 * var(--i)));
+    transform-origin: 280px;
+    position: absolute;
+    z-index: 100;
+    overflow: hidden;
+    bottom: 140px;
+}
+
+.box-container .boxe i{
+color: var(--green);
+font-size: 1rem;
+}
+
+.box-container .contents{
+flex: 1 1 45rem;
+
+margin-left: 20px;
+font-size: 20px;
+}
+
+.box img{
+    height: 15rem;
+    width: 15rem;
+}
+
+.doctors .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    gap: 2rem;
+}
+
+.doctors .box{   
+    padding: 1rem .5rem;
+    text-align: center;    
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: .2rem green;   
+    cursor: pointer;
+    margin-bottom:20px;
+}
+
+.share a{
+    color: green;
+}
+
+.cons-cont{
+display: grid;
+gap: 1rem;
+grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+padding-top: 8rem;
+padding-bottom: 5rem;
+width: 85%;
+margin-left:100px;
+}
+
+.cons-cont .icons{
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+border: 1rem green;
+border-radius: .5rem;
+text-align: center;
+padding: 1.5rem;
+}
+
+.cons-cont .icons i{
+font-size: 2.5rem;
+color: green;
+padding-bottom: .7rem
+}
+
+.cons-cont .icons h1{
+    font-size: 2rem;
+}
+
+/*media queries*/
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+    img{
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 55%;
+    }
+    img{
+        height: 10rem;
+        width: 5rem;
+    }
 }
